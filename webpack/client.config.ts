@@ -9,6 +9,8 @@ import merge from "webpack-merge";
 
 import baseConfig, { isDev } from "./base.config";
 
+  console.log("BUILD_ID in WEBPACK_STATUS:", process.env.BUILD_ID);
+  console.log("BUILD_NUMBER in WEBPACK_STATUS:", process.env.BUILD_NUMBER);
 const getPlugins = () => {
   let plugins = [
     new MiniCssExtractPlugin({
