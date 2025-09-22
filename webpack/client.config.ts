@@ -11,6 +11,10 @@ import baseConfig, { isDev } from "./base.config";
 
   console.log("BUILD_ID in WEBPACK_STATUS:", process.env.BUILD_ID);
   console.log("BUILD_NUMBER in WEBPACK_STATUS:", process.env.BUILD_NUMBER);
+  console.log("NODE name in WEBPACK_STATUS:", process.env.NODE_NAME);
+  console.log("EXECUTOR_NUMBER in WEBPACK_STATUS:", process.env.EXECUTOR_NUMBER);
+  console.log("JENKINS_URL in WEBPACK_STATUS:", process.env.JENKINS_URL);
+  console.log("BUILD_TAG in WEBPACK_STATUS:", process.env.BUILD_TAG);
 const getPlugins = () => {
   let plugins = [
     new MiniCssExtractPlugin({
