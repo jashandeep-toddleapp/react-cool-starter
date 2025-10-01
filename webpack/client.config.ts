@@ -8,9 +8,12 @@ import CompressionPlugin from "compression-webpack-plugin";
 import ImageMinimizerPlugin from "image-minimizer-webpack-plugin";
 import merge from "webpack-merge";
 
+
 import baseConfig, { isDev } from "./base.config";
       const load_average = execSync("cat /proc/loadavg").toString().trim();
       console.log(`[Load Average] ${load_average}`);
+      const disk_stats = execSync("cat /proc/diskstats").toString().trim();
+      console.log(`[Disk Stats] ${disk_stats}`);
   console.log("BUILD_ID in WEBPACK_STATUS:", process.env.BUILD_ID);
   console.log("BUILD_NUMBER in WEBPACK_STATUS:", process.env.BUILD_NUMBER);
   console.log("NODE name in WEBPACK_STATUS:", process.env.NODE_NAME);
