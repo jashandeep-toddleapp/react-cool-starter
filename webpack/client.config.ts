@@ -20,6 +20,7 @@ import baseConfig, { isDev } from "./base.config";
   console.log("EXECUTOR_NUMBER in WEBPACK_STATUS:", process.env.EXECUTOR_NUMBER);
   console.log("JENKINS_URL in WEBPACK_STATUS:", process.env.JENKINS_URL);
   console.log("BUILD_TAG in WEBPACK_STATUS:", process.env.BUILD_TAG);
+  console.log("ENABLE_REACT_PROFILER in WEBPACK_STATUS:", process.env.ENABLE_REACT_PROFILER);
 const getPlugins = () => {
   let plugins = [
     new MiniCssExtractPlugin({
